@@ -11,7 +11,8 @@
 	define("BASEURL", "/foyer/");
 	define("MYINDEX", 1);
 	define("HOMEINDEX", 1);
-
+ 
+	
 	require_once("fonctions.php");  
 	require("chargerBD.php");
 	include ("entities/classes.php");
