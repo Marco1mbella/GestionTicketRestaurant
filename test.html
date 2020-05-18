@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>slideToggle()</title>
+  </head>
+  <body>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <button id="afficheCache">Cacher</button><br/>
+    <img src="images/3il.jpg" id="image">
+    <script>
+      $(function() {
+        $('#afficheCache').on('click', function(){
+          $('#image').slideToggle(1000);
+          var label = $('#afficheCache').html();
+          if (label=='Cacher')
+            $('#afficheCache').html('Afficher');
+          else
+            $('#afficheCache').html('Cacher');
+        });
+      });
+    </script>
+  </body>
+</html>
